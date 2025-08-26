@@ -1,0 +1,19 @@
+$primary-color :#A72F3B;
+$dark : #242424;
+$gray-medium: #D6D6D6;
+$gray-light: #EDEDED;
+$gray-dark: #CBCBCB;
+
+
+@mixin flex-center($direction : row) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex($direction: row, $justify: baseline) {
+    display: flex;
+    justify-content: $justify;
+    flex-direction: $direction;
+}

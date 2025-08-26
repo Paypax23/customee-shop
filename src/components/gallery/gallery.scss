@@ -1,0 +1,25 @@
+@import '../../sass/variable.scss';
+.gallery-container{
+    @include flex($direction:row,$justify:space-between);
+    align-items: stretch;
+    gap: 2rem;
+    width: 100%;
+    margin: 0 auto;
+    .bigBanner{
+
+        width: 50%;
+        img{
+            width: 100%;
+        }
+    }
+    .miniGallery{
+        @include flex($direction:row,$justify:space-evenly);
+        align-items: space-evenly;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 50%;
+        *{
+            width: calc(50% - 1rem);
+        }
+    }
+}

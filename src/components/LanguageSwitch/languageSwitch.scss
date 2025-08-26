@@ -1,0 +1,9 @@
+@import '../../sass/variable.scss';
+select{
+        padding: 0.8rem 1rem;
+        border-radius: 0.5rem;
+        outline: none;
+        background-color: $primary-color;
+        color: white;
+        border: none;
+    }

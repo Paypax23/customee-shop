@@ -1,0 +1,62 @@
+@import '../../sass/variable';
+
+.header{
+    padding: 28px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.searchBar{
+    border-radius: 3rem;
+    display: flex;
+    border: 1px solid $gray-medium;
+    align-items: center;
+    background-color: white;
+    overflow: hidden;
+    width: 40%;
+    padding: 0 1rem;
+    justify-content: space-around;
+    input{
+        border: none;
+        height: 100%;
+        color: $primary-color;
+        width: 80%;
+        font-size: 14px;
+       outline: none;
+       padding: 1.3rem 1rem;
+       
+    }
+    input::placeholder{
+        color: $primary-color;
+    }
+    
+}
+.headerOptions{
+    display: flex;
+    gap: 3rem;
+    color: #333;
+    span{
+        display: flex; 
+        align-items: center;
+        gap:0.5rem; 
+        cursor: pointer;
+    }
+    span.cart{
+        position: relative;
+    }
+    span.count{
+        position: absolute;
+        border-radius: 50%;
+        font-size: 8px;
+        background-color: rgb(216, 80, 80);
+        top: 0;
+        right: 0;
+        height: 11px;
+        width: 11px;
+        color: white;
+        line-height: 11px;
+        text-align: center;
+        display: inline-block;
+    }
+}

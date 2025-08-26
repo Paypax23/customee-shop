@@ -1,0 +1,90 @@
+@import '../../sass/variable.scss';
+
+.cart-stepper{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-evenly;
+    width: 40vw;
+    align-items: center;
+    color: #EDD5D8;
+    
+    .active{
+        color: $primary-color;
+
+    }
+    span{
+        @include flex-center($direction:column);
+        gap: 0.6rem;
+    }
+    img{
+        width: 130px;
+        height:10px;
+    }
+}
+.contentWrap{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.cart-conteiner{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+.cart-items{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 1rem;
+    width: 70%;
+    gap: 2rem;
+}
+
+.payment-section{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    gap: 2rem;
+    border-radius: 12px;
+    border: 1px solid $gray-light ;
+    h3{
+        font-weight: 400;
+        
+    }
+    p{
+        color: #333;
+    }
+    input{
+        width: 70%;
+        padding: 1rem 2rem;
+        border: 1px solid $gray-medium;
+        border-radius: 6px;
+    }
+    .discount-contianer{
+        button{
+            border: 1.5px solid $primary-color;
+            border-radius: 6px;
+            padding: 1rem 2rem;
+        }
+        display: flex;
+        justify-content: space-around;
+
+    }
+    button{
+        border-radius: 6px;
+        background-color: $primary-color;
+        color: white;
+        padding: 1rem 0;
+    }
+}
+.info-container{
+    @include flex($direction:row,$justify:space-between);
+    align-items: center;
+}
+
+

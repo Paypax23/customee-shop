@@ -1,0 +1,74 @@
+@import '../../sass/variable.scss';
+
+.page-container {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    height: 100vh;
+    padding-top: 3rem;
+    align-items: center;
+    gap: 1rem;
+}
+
+.login-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+
+    .form-container {
+        height: 100%;
+        display: flex;
+        gap: 3rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        .input-container {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            width: 100%;
+            justify-content: start;
+
+            input {
+                width: 100%;
+                padding: 1rem 1.2rem;
+                border: 1px solid $gray-medium;
+                border-radius: 8px;
+                
+            }
+            input:focus{
+                outline:none;
+            }
+        }
+        .forgot-container{
+            display: flex;
+            justify-content: end;
+            width: 100%;
+            color:#3c8f7c;
+            margin-top: -1.4rem;
+            p{
+                cursor: pointer;
+            }
+        }
+        .button-container{
+            @include flex-center($direction:column);
+            width:100%;
+            gap: 1rem;
+            button{
+                width: 100%;
+                border-radius: 6px;
+                padding: 1rem 0;
+            }
+            .colored{
+                background-color: $primary-color;
+                color: white;
+            }
+        }
+    }
+}
+.error{
+    border: 2px solid salmon !important;
+    color: salmon;
+}

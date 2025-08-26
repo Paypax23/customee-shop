@@ -1,0 +1,30 @@
+@import '../../sass/variable.scss';
+
+.shoppingcart-item {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+
+    .right-side {
+        @include flex($direction: row, $justify: space-evenly);
+        align-items: center;
+
+        img {
+            width: 30%;
+            border-radius: 12px;
+        }
+    }
+
+    .left-side {}
+}
+.send-info{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    align-items: center;
+    gap: 1rem;
+    color: #333;
+    font-weight: 300;
+    
+}

@@ -1,0 +1,55 @@
+@import '../../sass/variable.scss';
+
+.top-footer {
+    margin-top: 5rem;
+    width: 100%;
+    background-color: #641c23;
+    display: flex;
+    color: white;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4rem 5rem;
+    .right-footer-section {
+        p{
+            font-size: 12px;
+        }
+        @include flex($direction: column);
+        justify-content: start;
+        gap: 1rem;
+        span{
+            width: 100%;
+            gap: 1rem;
+            @include flex($direction:row, $justify:space-evenly)
+        }
+        input{
+            width: 80%;
+            color: white;
+            border: 1px solid white;
+            border-radius: 8px;
+            padding: 1rem 2rem;
+            outline: none;
+            background-color: transparent;
+        }
+        input::placeholder{
+            color: white;
+        }
+        button{
+            color: white;
+            background-color: #a72f3b;
+        }
+    }
+
+    .left-footer-section {
+        @include flex-center($direction: column);
+        gap: 1rem;
+        span{
+            gap: 1.2rem;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            font-size: 2em;
+        }
+    }
+}
+
+.main-footer {}

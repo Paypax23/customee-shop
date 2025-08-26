@@ -1,0 +1,30 @@
+@import '../../sass/variable.scss';
+
+
+.divider-container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 4rem auto 2rem;
+    justify-content: center;
+    .textSec{
+        display: flex;
+        gap: 4px;
+        font-size: 12px;
+        width: 19%;
+        align-items: center;
+    }
+    .hrSec{
+        width: 100%;
+        hr{
+            border-top: 1px solid $gray-light;
+        }
+    }
+    a{
+        width: 10%;
+        text-align: center;
+        margin: 0 1rem;
+        color: $primary-color;
+    }
+
+}
